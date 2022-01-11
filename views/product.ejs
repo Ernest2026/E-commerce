@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+	<%- include ('component/head.ejs') %> 
+	<link rel="stylesheet" href="css/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="js/jquery-ui.min.js"></script>
+<body class="animsition">
+	
+	<!-- Header -->
+	<%- include ('component/header.ejs') %> 
+
+	<!-- Cart -->
+	<%- include ('component/cart.ejs') %> 
+
+	
+	<!-- Product -->
+	<div class="bg0 m-t-23 p-b-140">
+		<form action="search" method="get">
+			<div class="container">
+				<div class="p-b-10">
+					<h3 class="ltext-103 cl5">
+						Product Overview
+					</h3>
+				</div>
+	
+				<div class="flex-w flex-sb-m p-b-52">
+					<div class="flex-w flex-l-m filter-tope-group m-tb-10">
+						<!-- <a href="product" class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5 how-active1" data-filter="*">
+							All Products
+						</a> -->
+	
+						
+					</div>
+	
+					<div class="flex-w flex-c-m m-tb-10">
+						<div class="flex-c-m stext-106 cl6 size-104 bor4 pointer hov-btn3 trans-04 m-r-8 m-tb-4 js-show-filter">
+							<i class="icon-filter cl2 m-r-6 fs-15 trans-04 zmdi zmdi-filter-list"></i>
+							<i class="icon-close-filter cl2 m-r-6 fs-15 trans-04 zmdi zmdi-close dis-none"></i>
+							 Filter
+						</div>
+	
+						<div class="flex-c-m stext-106 cl6 size-105 bor4 pointer hov-btn3 trans-04 m-tb-4 js-show-search">
+							<i class="icon-search cl2 m-r-6 fs-15 trans-04 zmdi zmdi-search"></i>
+							<i class="icon-close-search cl2 m-r-6 fs-15 trans-04 zmdi zmdi-close dis-none"></i>
+							Search
+						</div>
+					</div>
+					
+					<!-- Search product -->
+					<div class="dis-none panel-search w-full p-t-10 p-b-15">
+						<div class="bor8 dis-flex p-l-15 ui-widget">
+							<input class="mtext-107 cl2 size-114 plh3 p-r-15" value="<%= val %>" type="text" id="productsearch" name="name" placeholder="Search product, brand or category. . .">
+							<button type="submit" class="size-113 flex-c-m fs-16 cl2 hov-cl1 trans-04 hov-search" style="width: 50px;">
+								<i class="zmdi zmdi-search"></i>
+							</button>
+						</div>	
+					</div>
+	
+					<!-- Filter -->
+					<div class="dis-none panel-filter w-full p-t-10">
+						<div class="wrap-filter flex-w bg6 w-full p-lr-40 p-t-27 p-lr-15-sm">
+							<div class="filter-col1 p-r-15 p-b-27">
+								<div class="mtext-102 cl2 p-b-15">
+									Sort By
+								</div>
+	
+								<ul>
+									<li class="p-b-6">
+										<input type="radio" <% if (sortby === "default") { %>checked<% } %> value="default" name="sortby" id="default" style="display: none;" class="filter">
+										<label for="default" class="filter-link stext-106 trans-04" style="border-bottom: unset;">
+											Default	
+										</label>
+										
+									</li>
+	
+									<!-- <li class="p-b-6">
+										<input type="radio" value="popularity" name="sortby" id="popularity" style="display: none;" class="filter">
+										<label for="popularity" class="filter-link stext-106 trans-04" style="border-bottom: unset;">
+											Popularity	
+										</label>
+									</li>
+	
+									<li class="p-b-6">
+										<input type="radio" value="avrrating" name="sortby" id="avrrating" style="display: none;" class="filter">
+										<label for="avrrating" class="filter-link stext-106 trans-04" style="border-bottom: unset;">
+											Average rating	
+										</label>
+									</li> -->
+	
+									<li class="p-b-6">
+										<input type="radio" <% if (sortby === "newness") { %>checked<% } %> value="newness" name="sortby" id="newness" style="display: none;" class="filter">
+										<label for="newness" class="filter-link stext-106 trans-04" style="border-bottom: unset;">
+											Newness	
+										</label>
+									</li>
+	
+									<li class="p-b-6">
+										<input type="radio" <% if (sortby === "lowhigh") { %>checked<% } %> value="lowhigh" name="sortby" id="lowhigh" style="display: none;" class="filter">
+										<label for="lowhigh" class="filter-link stext-106 trans-04" style="border-bottom: unset;">
+											Price: Low to High
+										</label>
+									</li>
+	
+									<li class="p-b-6">
+										<input type="radio" <% if (sortby === "highlow") { %>checked<% } %> value="highlow" name="sortby" id="highlow" style="display: none;" class="filter">
+										<label for="highlow" class="filter-link stext-106 trans-04" style="border-bottom: unset;">
+											Price: High to Low	
+										</label>
+									</li>
+								</ul>
+							</div>
+	
+							<div class="filter-col2 p-r-15 p-b-27">
+								<div class="mtext-102 cl2 p-b-15">
+									Price
+								</div>
+	
+								<ul>
+									<li class="p-b-6">
+										<input type="radio" <% if (price === "all") { %>checked<% } %> value="all" name="price" id="all" style="display: none;" class="filter">
+										<label for="all" class="filter-link stext-106 trans-04" style="border-bottom: unset;">
+											All	
+										</label>
+									</li>
+	
+									<li class="p-b-6">
+										<input type="radio" <% if (price === "price1") { %>checked<% } %> value="price1" name="price" id="price1" style="display: none;" class="filter">
+										<label for="price1" class="filter-link stext-106 trans-04" style="border-bottom: unset;">
+											N 0.00 - N 2000.00
+										</label>
+									</li>
+	
+									<li class="p-b-6">
+										<input type="radio" <% if (price === "price2") { %>checked<% } %> value="price2" name="price" id="price2" style="display: none;" class="filter">
+										<label for="price2" class="filter-link stext-106 trans-04" style="border-bottom: unset;">
+											N 2000.00 - N 4000.00
+										</label>
+									</li>
+	
+									<!-- <li class="p-b-6">
+										<input type="radio" value="price3" name="price" id="price3" style="display: none;" class="filter">
+										<label for="price3" class="filter-link stext-106 trans-04" style="border-bottom: unset;">
+											N 3000.00 - N 4500.00
+										</label>
+									</li> -->
+	
+									<!-- <li class="p-b-6">
+										<input type="radio" value="price4" name="price" id="price4" style="display: none;" class="filter">
+										<label for="price4" class="filter-link stext-106 trans-04" style="border-bottom: unset;">
+											N 3000.00 - N 4000.00
+										</label>
+									</li> -->
+	
+									<li class="p-b-6">
+										<input type="radio" <% if (price === "price3") { %>checked<% } %> value="price3" name="price" id="price5" style="display: none;" class="filter">
+										<label for="price5" class="filter-link stext-106 trans-04" style="border-bottom: unset;">
+											N 4000.00+
+										</label>
+									</li>
+								</ul>
+							</div>
+	
+							<div class="filter-col3 p-r-15 p-b-27">
+								<div class="mtext-102 cl2 p-b-15">
+									Color
+								</div>
+	
+								<ul>
+									<li class="p-b-6">
+										<input type="radio" value="all" name="color" id="colordef" style="display: none;" class="filter">
+										<label for="colordef" class="filter-link stext-106 trans-04" style="border-bottom: unset; display: inline;">
+											All
+										</label>
+									</li>
+									<li class="p-b-6">
+										<span class="fs-15 lh-12 m-r-6" style="color: #222;">
+											<i class="zmdi zmdi-circle"></i>
+										</span>
+										<input type="radio" <% if (color === "black") { %>checked<% } %> value="black" name="color" id="black" style="display: none;" class="filter">
+										<label for="black" class="filter-link stext-106 trans-04" style="border-bottom: unset; display: inline; display: inline;">
+											Black
+										</label>
+									</li>
+	
+									<li class="p-b-6">
+										<span class="fs-15 lh-12 m-r-6" style="color: #4272d7;">
+											<i class="zmdi zmdi-circle"></i>
+										</span>
+										<input type="radio" <% if (color === "blue") { %>checked<% } %> value="blue" name="color" id="blue" style="display: none;" class="filter">
+										<label for="blue" class="filter-link stext-106 trans-04" style="border-bottom: unset; display: inline;">
+											Blue
+										</label>
+									</li>
+	
+									<!-- <li class="p-b-6">
+										<span class="fs-15 lh-12 m-r-6" style="color: #b3b3b3;">
+											<i class="zmdi zmdi-circle"></i>
+										</span>
+										<input type="radio" value="grey" name="color" id="grey" style="display: none;" class="filter">
+										<label for="grey" class="filter-link stext-106 trans-04" style="border-bottom: unset; display: inline;">
+											Grey
+										</label>
+									</li> -->
+	
+									<li class="p-b-6">
+										<span class="fs-15 lh-12 m-r-6" style="color: hsl(0, 59%, 20%);">
+											<i class="zmdi zmdi-circle"></i>
+										</span>
+										<input type="radio" <% if (color === "brown") { %>checked<% } %> value="brown" name="color" id="brown" style="display: none;" class="filter">
+										<label for="brown" class="filter-link stext-106 trans-04" style="border-bottom: unset; display: inline;">
+											Brown
+										</label>
+									</li>
+	
+									<!-- <li class="p-b-6">
+										<span class="fs-15 lh-12 m-r-6" style="color: #fa4251;">
+											<i class="zmdi zmdi-circle"></i>
+										</span>
+										<input type="radio" value="red" name="color" id="red" style="display: none;" class="filter">
+										<label for="red" class="filter-link stext-106 trans-04" style="border-bottom: unset; display: inline;">
+											Red
+										</label>
+									</li> -->
+	
+									<li class="p-b-6">
+										<span class="fs-15 lh-12 m-r-6" style="color: rgb(255, 255, 255);">
+											<i class="zmdi zmdi-circle"></i>
+										</span>
+										<input type="radio" <% if (color === "white") { %>checked<% } %> value="white" name="color" id="white" style="display: none;" class="filter">
+										<label for="white" class="filter-link stext-106 trans-04" style="border-bottom: unset; display: inline;">
+											White
+										</label>
+									</li>
+								</ul>
+							</div>
+	
+							<div class="filter-col4 p-b-27">
+								<div class="mtext-102 cl2 p-b-15">
+									Tags
+								</div>
+	
+								<div class="flex-w p-t-4 m-r--5">
+									<input type="radio" value="all" name="tags" id="tagdef" style="display: none;" class="br-filter">
+									<label for="tagdef" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
+										All
+									</label>
+
+									<input type="radio" <% if (tags === "fashion") { %>checked<% } %> value="fashion" name="tags" id="fashion" style="display: none;" class="br-filter">
+									<label for="fashion" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
+										Fashion
+									</label>
+	
+									<input type="radio" <% if (tags === "livestyle") { %>checked<% } %> value="livestyle" name="tags" id="livestyle" style="display: none;" class="br-filter">
+									<label for="livestyle" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
+										Livestyle
+									</label>
+	
+									<input type="radio" <% if (tags === "denim") { %>checked<% } %> value="denim" name="tags" id="denim" style="display: none;" class="br-filter">
+									<label for="denim" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
+										Denim
+									</label>
+	
+									<input type="radio" <% if (tags === "streetstyle") { %>checked<% } %> value="streetstyle" name="tags" id="streetstyle" style="display: none;" class="br-filter">
+									<label for="streetstyle" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
+										Streetstyle
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>			
+				</div>
+	
+				<div class="row isotope-grid">
+					<% for( let i = 0; i < product.length; i++ ) { %>
+	
+					<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item">
+						<!-- Block2 -->
+						<div class="block2">
+							<div class="block2-pic hov-img0">
+								<img src="<%- product[i].image %> " alt="IMG-PRODUCT">
+	
+								<a href="/productdetail?id=<%= product[i].id %>" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04">
+									Quick View
+								</a>
+							</div>
+	
+							<div class="block2-txt flex-w flex-t p-t-14">
+								<div class="block2-txt-child1 flex-col-l ">
+									<a href="/productdetail?id=<%= product[i].id %>" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+										<%- product[i].name %>
+									</a>
+	
+									<span class="stext-105 cl3">
+										N<%- product[i].price %> 
+									</span>
+								</div>
+	
+								<div class="block2-txt-child2 flex-r p-t-3">
+									<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+										<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png" alt="ICON">
+										<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png" alt="ICON">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<% } %>
+				</div>
+	
+				<!-- Load more -->
+				<div class="flex-c-m flex-w w-full p-t-45">
+					<a href="#" class="flex-c-m stext-101 cl5 size-103 bg2 bor1 hov-btn1 p-lr-15 trans-04">
+						Load More
+					</a>
+				</div>
+			</div>
+		</form>
+	</div>
+		
+	<!-- Footer -->
+	<%- include ('component/footer.ejs') %>
+
+	<!-- Modal1 -->
+	<%- include ('component/modal.ejs') %> 
+
+<!-- Script -->
+<script>
+	$(document).ready(function () {
+  $('#productsearch').autocomplete({
+	  source: async function (req, res) {
+		  var sortby = ($('input[type="radio"][name="sortby"]:checked').val()) ? $('input[type="radio"][name="sortby"]:checked').val() : '';
+		  var price = ($('input[type="radio"][name="price"]:checked').val()) ? $('input[type="radio"][name="price"]:checked').val() : '';
+		  var color = ($('input[type="radio"][name="color"]:checked').val()) ? $('input[type="radio"][name="color"]:checked').val() : '';
+		  var tags = ($('input[type="radio"][name="tags"]:checked').val()) ? $('input[type="radio"][name="tags"]:checked').val() : '';
+		  
+		  let data = await fetch(`http://localhost:3000/search?name=${req.term}&sortby=${sortby}&price=${price}&color=${color}&tags=${tags}&type=autocomplete`)
+		  .then(results => results.json())
+		  .then(results => results.map(result => {
+			  return { label: result.name, value: result.name, id: result._id }
+		  }));
+		  res(data)
+	  },
+	  minLength: 2,
+	  select: function (event, ui) {
+		  window.location = `http://localhost:3000/productdetail?id=${ui.item.id}`
+	  }
+  })
+})
+</script>
+<%- include ('component/script.ejs') %> 
+
+</body>
+</html>

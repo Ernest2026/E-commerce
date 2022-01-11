@@ -1,0 +1,351 @@
+[{
+  "_id": {
+    "$oid": "61d42ba1bac22af4b5c8144c"
+  },
+  "address": {
+    "name": "Elepe community senior high school",
+    "state": "Lagos",
+    "keyword": [
+      "Ikorodu",
+      "Elepe"
+    ],
+    "country": "Nigeria",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        6.583171381071612,
+        3.562515043310067
+      ]
+    }
+  }
+},{
+  "_id": {
+    "$oid": "61d42be2bac22af4b5c8144d"
+  },
+  "address": {
+    "name": "Igbogbo stadium",
+    "state": "Lagos",
+    "keyword": [
+      "Ikorodu",
+      "Igbogbo"
+    ],
+    "country": "Nigeria",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        6.592294626589357,
+        3.5276677860650896
+      ]
+    }
+  }
+},{
+  "_id": {
+    "$oid": "61d42c75bac22af4b5c8144e"
+  },
+  "address": {
+    "name": "Tinubu Estate",
+    "state": "Lagos",
+    "keyword": [
+      "Ikorodu",
+      "Tinubu estate"
+    ],
+    "country": "Nigeria",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        6.595875667745633,
+        3.5836293912959394
+      ]
+    }
+  }
+},{
+  "_id": {
+    "$oid": "61d42cc9bac22af4b5c8144f"
+  },
+  "address": {
+    "name": "Waec office Ikorodu",
+    "state": "Lagos",
+    "keyword": [
+      "Waec",
+      "Ikorodu"
+    ],
+    "country": "Nigeria",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        6.596993954433637,
+        3.523565133456147
+      ]
+    }
+  }
+},{
+  "_id": {
+    "$oid": "61d42db5bac22af4b5c81450"
+  },
+  "address": {
+    "name": "General Hospital Ijede",
+    "state": "Lagos",
+    "keyword": [
+      "Ikorodu",
+      "Ijede",
+      "Hospital"
+    ],
+    "country": "Nigeria",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        6.56553740452588,
+        3.603836450214292
+      ]
+    }
+  }
+},{
+  "_id": {
+    "$oid": "61d42de5bac22af4b5c81451"
+  },
+  "address": {
+    "name": "Justrite superstore Ikorodu",
+    "state": "Lagos",
+    "keyword": [
+      "Ikorodu",
+      "Justrite",
+      "superstore"
+    ],
+    "country": "Nigeria",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        6.624539480901081,
+        3.4586418265449073
+      ]
+    }
+  }
+},{
+  "_id": {
+    "$oid": "61d42e0fbac22af4b5c81452"
+  },
+  "address": {
+    "name": "Ikeja city mall",
+    "state": "Lagos",
+    "keyword": [
+      "Ikeja",
+      "mall"
+    ],
+    "country": "Nigeria",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        6.6174489329438675,
+        3.37325067194025
+      ]
+    }
+  }
+},{
+  "_id": {
+    "$oid": "61d42e2ebac22af4b5c81453"
+  },
+  "address": {
+    "name": "Igando Market",
+    "state": "Lagos",
+    "keyword": [
+      "Alimosho",
+      "Igando"
+    ],
+    "country": "Nigeria",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        6.553302932582946,
+        3.2343846145645467
+      ]
+    }
+  }
+},{
+  "_id": {
+    "$oid": "61d42e6abac22af4b5c81454"
+  },
+  "address": {
+    "name": "University of lagos",
+    "state": "Lagos",
+    "keyword": [
+      "University of lagos",
+      "Unilag",
+      "Akoka"
+    ],
+    "country": "Nigeria",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        6.514334173207667,
+        3.3894191276106658
+      ]
+    }
+  }
+},{
+  "_id": {
+    "$oid": "61d42ebebac22af4b5c81455"
+  },
+  "address": {
+    "name": "Federal university of technology owerri",
+    "state": "Imo",
+    "keyword": [
+      "Federal university of technology",
+      "owerri",
+      "futo"
+    ],
+    "country": "Nigeria",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.388928215825487,
+        6.97980562050647
+      ]
+    }
+  }
+},{
+  "_id": {
+    "$oid": "61d42ef6bac22af4b5c81456"
+  },
+  "address": {
+    "name": "Winners campus fellowship nekede",
+    "state": "Imo",
+    "keyword": [
+      "Nekede",
+      "campus",
+      "winners"
+    ],
+    "country": "Nigeria",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.434176576381955,
+        7.020460451655898
+      ]
+    }
+  }
+},{
+  "_id": {
+    "$oid": "61d42f37bac22af4b5c81457"
+  },
+  "address": {
+    "name": "Orie market",
+    "state": "Imo",
+    "keyword": [
+      "Orie",
+      "Ideato north",
+      "akokwa"
+    ],
+    "country": "Nigeria",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.9123449507246955,
+        7.111304370461472
+      ]
+    }
+  }
+},{
+  "_id": {
+    "$oid": "61d4304cbac22af4b5c81458"
+  },
+  "address": {
+    "name": "Akokwa motor park",
+    "state": "Imo",
+    "keyword": [
+      "Akokwa",
+      "Motor park"
+    ],
+    "country": "Nigeria",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.910504821052745,
+        7.109582957620624
+      ]
+    }
+  }
+},{
+  "_id": {
+    "$oid": "61d43084bac22af4b5c81459"
+  },
+  "address": {
+    "name": "Afor Primary school, Umuofia Akokwa",
+    "state": "Imo",
+    "keyword": [
+      "Afor",
+      "Umuofia",
+      "Akokwa"
+    ],
+    "country": "Nigeria",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.911328321500452,
+        7.129417998774074
+      ]
+    }
+  }
+},{
+  "_id": {
+    "$oid": "61d430b3bac22af4b5c8145a"
+  },
+  "address": {
+    "name": "Ideato North Local Government Headquaters",
+    "state": "Imo",
+    "keyword": [
+      "Ideato North",
+      "Local Government",
+      "headquaters"
+    ],
+    "country": "Nigeria",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.862663982655524,
+        7.09822139757585
+      ]
+    }
+  }
+},{
+  "_id": {
+    "$oid": "61d430ebbac22af4b5c8145b"
+  },
+  "address": {
+    "name": "Osina Secondary Commercial school",
+    "state": "Imo",
+    "keyword": [
+      "Osina",
+      "Ideato North",
+      "school"
+    ],
+    "country": "Nigeria",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.876157704665182,
+        7.11055730959762
+      ]
+    }
+  }
+},{
+  "_id": {
+    "$oid": "61d43129bac22af4b5c8145c"
+  },
+  "address": {
+    "name": "Town hall osina",
+    "state": "Imo",
+    "keyword": [
+      "Osina",
+      "Hall",
+      "town"
+    ],
+    "country": "Nigeria",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.8843664456297455,
+        7.105884095740137
+      ]
+    }
+  }
+}]

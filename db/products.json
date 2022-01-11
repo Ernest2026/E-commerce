@@ -1,0 +1,305 @@
+[{
+  "_id": {
+    "$oid": "61c9fe670d2941ad7e87d7a0"
+  },
+  "name": "Esprit Ruffle Shirt",
+  "price": 2000,
+  "color": "white",
+  "tags": ["fashion", "streetstyle"],
+  "image": "uploads/product-01-1640627815519.jpeg",
+  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus mollitia beatae, optio excepturi voluptates esse laudantium voluptas quaerat consequatur modi iste libero, accusantium corrupti nihil reiciendis? Saepe perferendis quisquam dicta.",
+  "category": {
+    "$oid": "61c9ebd30d2941ad7e87d78e"
+  },
+  "created_at": {
+    "$date": "2021-12-27T17:56:55.528Z"
+  },
+  "updated_at": {
+    "$date": "2021-12-27T18:40:50.044Z"
+  }
+},{
+  "_id": {
+    "$oid": "61c9fe820d2941ad7e87d7a3"
+  },
+  "name": "Herschel supply",
+  "price": 3000,
+  "color": "white",
+  "tags": ["fashion", "livestyle"],
+  "image": "uploads/product-02-1640627842653.jpeg",
+  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus mollitia beatae, optio excepturi voluptates esse laudantium voluptas quaerat consequatur modi iste libero, accusantium corrupti nihil reiciendis? Saepe perferendis quisquam dicta.",
+  "category": {
+    "$oid": "61c9ebd30d2941ad7e87d78e"
+  },
+  "created_at": {
+    "$date": "2021-12-27T17:57:22.659Z"
+  },
+  "updated_at": {
+    "$date": "2021-12-27T17:57:22.659Z"
+  }
+},{
+  "_id": {
+    "$oid": "61c9feab0d2941ad7e87d7a6"
+  },
+  "name": "Only Check Trouser",
+  "price": 2500,
+  "color": "blue",
+  "tags": ["fashion", "livestyle"],
+  "image": "uploads/product-03-1640627883697.jpeg",
+  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus mollitia beatae, optio excepturi voluptates esse laudantium voluptas quaerat consequatur modi iste libero, accusantium corrupti nihil reiciendis? Saepe perferendis quisquam dicta.",
+  "category": {
+    "$oid": "61c9ebd70d2941ad7e87d790"
+  },
+  "created_at": {
+    "$date": "2021-12-27T17:58:03.705Z"
+  },
+  "updated_at": {
+    "$date": "2021-12-27T17:58:03.705Z"
+  }
+},{
+  "_id": {
+    "$oid": "61c9fec50d2941ad7e87d7a9"
+  },
+  "name": "Classic Trench Coat",
+  "price": 5000,
+  "color": "brown",
+  "tags": ["fashion", "denim"],
+  "image": "uploads/product-04-1640627909327.jpeg",
+  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus mollitia beatae, optio excepturi voluptates esse laudantium voluptas quaerat consequatur modi iste libero, accusantium corrupti nihil reiciendis? Saepe perferendis quisquam dicta.",
+  "category": {
+    "$oid": "61c9ebd30d2941ad7e87d78e"
+  },
+  "created_at": {
+    "$date": "2021-12-27T17:58:29.333Z"
+  },
+  "updated_at": {
+    "$date": "2021-12-27T17:58:29.333Z"
+  }
+},{
+  "_id": {
+    "$oid": "61c9fee90d2941ad7e87d7ac"
+  },
+  "name": "Front Pocket Jumper",
+  "price": 3500,
+  "color": "blue",
+  "tags": ["streetstyle", "livestyle"],
+  "image": "uploads/product-05-1640627945676.jpeg",
+  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus mollitia beatae, optio excepturi voluptates esse laudantium voluptas quaerat consequatur modi iste libero, accusantium corrupti nihil reiciendis? Saepe perferendis quisquam dicta.",
+  "category": {
+    "$oid": "61c9ebd30d2941ad7e87d78e"
+  },
+  "created_at": {
+    "$date": "2021-12-27T17:59:05.682Z"
+  },
+  "updated_at": {
+    "$date": "2021-12-27T17:59:05.682Z"
+  }
+},{
+  "_id": {
+    "$oid": "61c9ff0f0d2941ad7e87d7af"
+  },
+  "name": "Vintage Inspired Classic",
+  "price": 2000,
+  "color": "black",
+  "tags": ["fashion"],
+  "image": "uploads/product-06-1640627983911.jpeg",
+  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus mollitia beatae, optio excepturi voluptates esse laudantium voluptas quaerat consequatur modi iste libero, accusantium corrupti nihil reiciendis? Saepe perferendis quisquam dicta.",
+  "category": {
+    "$oid": "61c9ebf70d2941ad7e87d796"
+  },
+  "created_at": {
+    "$date": "2021-12-27T17:59:43.919Z"
+  },
+  "updated_at": {
+    "$date": "2021-12-27T17:59:43.919Z"
+  }
+},{
+  "_id": {
+    "$oid": "61c9ff320d2941ad7e87d7b2"
+  },
+  "name": "Shirt in Stretch Cotton",
+  "price": 3500,
+  "color": "black",
+  "tags": ["fashion", "denim"],
+  "image": "uploads/product-07-1640628018517.jpeg",
+  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus mollitia beatae, optio excepturi voluptates esse laudantium voluptas quaerat consequatur modi iste libero, accusantium corrupti nihil reiciendis? Saepe perferendis quisquam dicta.",
+  "category": {
+    "$oid": "61c9ebd30d2941ad7e87d78e"
+  },
+  "created_at": {
+    "$date": "2021-12-27T18:00:18.522Z"
+  },
+  "updated_at": {
+    "$date": "2021-12-27T18:00:18.522Z"
+  }
+},{
+  "_id": {
+    "$oid": "61c9ff4e0d2941ad7e87d7b5"
+  },
+  "name": "Pieces Metallic Printed",
+  "price": 2500,
+  "color": "white",
+  "tags": ["fashion", "livestyle", "streetstyle"],
+  "image": "uploads/product-08-1640628046503.jpeg",
+  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus mollitia beatae, optio excepturi voluptates esse laudantium voluptas quaerat consequatur modi iste libero, accusantium corrupti nihil reiciendis? Saepe perferendis quisquam dicta.",
+  "category": {
+    "$oid": "61c9ebd30d2941ad7e87d78e"
+  },
+  "created_at": {
+    "$date": "2021-12-27T18:00:46.507Z"
+  },
+  "updated_at": {
+    "$date": "2021-12-27T18:00:46.507Z"
+  }
+},{
+  "_id": {
+    "$oid": "61c9ff760d2941ad7e87d7b8"
+  },
+  "name": "Converse All Star Hi Plimsolls",
+  "price": 3500,
+  "color": "black",
+  "tags": ["fashion", "streetstyle", "livestyle"],
+  "image": "uploads/product-09-1640630190388.jpeg",
+  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus mollitia beatae, optio excepturi voluptates esse laudantium voluptas quaerat consequatur modi iste libero, accusantium corrupti nihil reiciendis? Saepe perferendis quisquam dicta.",
+  "category": {
+    "$oid": "61c9ebf30d2941ad7e87d794"
+  },
+  "created_at": {
+    "$date": "2021-12-27T18:01:26.982Z"
+  },
+  "updated_at": {
+    "$date": "2021-12-27T18:01:26.982Z"
+  }
+},{
+  "_id": {
+    "$oid": "61c9ff900d2941ad7e87d7bb"
+  },
+  "name": "Femme T-Shirt In Stripe",
+  "price": 1500,
+  "color": "black",
+  "tags": ["streetstyle", "livestyle"],
+  "image": "uploads/product-10-1640628112896.jpeg",
+  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus mollitia beatae, optio excepturi voluptates esse laudantium voluptas quaerat consequatur modi iste libero, accusantium corrupti nihil reiciendis? Saepe perferendis quisquam dicta.",
+  "category": {
+    "$oid": "61c9ebd30d2941ad7e87d78e"
+  },
+  "created_at": {
+    "$date": "2021-12-27T18:01:52.903Z"
+  },
+  "updated_at": {
+    "$date": "2021-12-27T18:01:52.903Z"
+  }
+},{
+  "_id": {
+    "$oid": "61c9ffad0d2941ad7e87d7be"
+  },
+  "name": "Herschel supply",
+  "price": 2000,
+  "color": "blue",
+  "tags": ["fashion", "livestyle"],
+  "image": "uploads/product-11-1640628141416.jpeg",
+  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus mollitia beatae, optio excepturi voluptates esse laudantium voluptas quaerat consequatur modi iste libero, accusantium corrupti nihil reiciendis? Saepe perferendis quisquam dicta.",
+  "category": {
+    "$oid": "61c9ebd70d2941ad7e87d790"
+  },
+  "created_at": {
+    "$date": "2021-12-27T18:02:21.422Z"
+  },
+  "updated_at": {
+    "$date": "2021-12-27T18:02:21.423Z"
+  }
+},{
+  "_id": {
+    "$oid": "61c9ffcf0d2941ad7e87d7c1"
+  },
+  "name": "Herschel supply",
+  "price": 1000,
+  "color": "brown",
+  "tags": ["livestyle", "streetstyle"],
+  "image": "uploads/product-12-1640628175810.jpeg",
+  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus mollitia beatae, optio excepturi voluptates esse laudantium voluptas quaerat consequatur modi iste libero, accusantium corrupti nihil reiciendis? Saepe perferendis quisquam dicta.",
+  "category": {
+    "$oid": "61c9ebd70d2941ad7e87d790"
+  },
+  "created_at": {
+    "$date": "2021-12-27T18:02:55.814Z"
+  },
+  "updated_at": {
+    "$date": "2021-12-27T18:02:55.814Z"
+  }
+},{
+  "_id": {
+    "$oid": "61c9ffee0d2941ad7e87d7c4"
+  },
+  "name": "T-Shirt with Sleeve",
+  "price": 2000,
+  "color": "white",
+  "tags": ["livestyle", "streetstyle"],
+  "image": "uploads/product-13-1640628206741.jpeg",
+  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus mollitia beatae, optio excepturi voluptates esse laudantium voluptas quaerat consequatur modi iste libero, accusantium corrupti nihil reiciendis? Saepe perferendis quisquam dicta.",
+  "category": {
+    "$oid": "61c9ebd30d2941ad7e87d78e"
+  },
+  "created_at": {
+    "$date": "2021-12-27T18:03:26.748Z"
+  },
+  "updated_at": {
+    "$date": "2021-12-27T18:03:26.748Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ca00080d2941ad7e87d7c7"
+  },
+  "name": "Pretty Little Thing",
+  "price": 1500,
+  "color": "black",
+  "tags": ["streetstyle", "livestyle"],
+  "image": "uploads/product-14-1640628232619.jpeg",
+  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus mollitia beatae, optio excepturi voluptates esse laudantium voluptas quaerat consequatur modi iste libero, accusantium corrupti nihil reiciendis? Saepe perferendis quisquam dicta.",
+  "category": {
+    "$oid": "61c9ebd30d2941ad7e87d78e"
+  },
+  "created_at": {
+    "$date": "2021-12-27T18:03:52.627Z"
+  },
+  "updated_at": {
+    "$date": "2021-12-27T18:03:52.627Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ca00220d2941ad7e87d7ca"
+  },
+  "name": "Mini Silver Mesh Watch",
+  "price": 2500,
+  "color": "black",
+  "tags": ["fashion"],
+  "image": "uploads/product-15-1640628258185.jpeg",
+  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus mollitia beatae, optio excepturi voluptates esse laudantium voluptas quaerat consequatur modi iste libero, accusantium corrupti nihil reiciendis? Saepe perferendis quisquam dicta.",
+  "category": {
+    "$oid": "61c9ebf70d2941ad7e87d796"
+  },
+  "created_at": {
+    "$date": "2021-12-27T18:04:18.191Z"
+  },
+  "updated_at": {
+    "$date": "2021-12-27T18:04:18.191Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ca003c0d2941ad7e87d7cd"
+  },
+  "name": "Square Neck Back",
+  "price": 1000,
+  "color": "black",
+  "tags": ["streetstyle", "livestyle"],
+  "image": "uploads/product-16-1640628284673.jpeg",
+  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus mollitia beatae, optio excepturi voluptates esse laudantium voluptas quaerat consequatur modi iste libero, accusantium corrupti nihil reiciendis? Saepe perferendis quisquam dicta.",
+  "category": {
+    "$oid": "61c9ebd30d2941ad7e87d78e"
+  },
+  "created_at": {
+    "$date": "2021-12-27T18:04:44.677Z"
+  },
+  "updated_at": {
+    "$date": "2021-12-27T18:04:44.677Z"
+  }
+}]

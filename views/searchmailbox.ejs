@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/jquery-ui.min.js"></script>
+</head>
+<body>
+
+    <div class="ui-widget">
+        <label for="recipe"></label>
+        <input type="text" id="recipe">
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('#recipe').autocomplete({
+                source: async function (req, res) {
+                    let data = await fetch(`http://localhost:3000/searchmailbox?term=${req.term}`)
+                    .then(results => results.json())
+                    .then(results => results.map(result => {
+                        return { label: result.username, value: result.username, id: result._id }
+                    }));
+                    res(data)
+                },
+                minLength: 2,
+                select: function (event, ui) {
+                    console.log(ui.item);
+                }
+            })
+        })
+    </script>
+</body>
+</html>
