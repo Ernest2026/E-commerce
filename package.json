@@ -4,8 +4,7 @@
   "description": "backend of the e-shop",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
-    "check": "nodemon test.js",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
