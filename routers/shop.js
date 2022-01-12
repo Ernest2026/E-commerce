@@ -9,6 +9,7 @@ const { OrderDetail } = require("../models/orderDetail");
 const mongoose = require("mongoose");
 const multer = require("multer");
 const { Category } = require("../models/category");
+const apiKey = process.env.API_KEY;
 
 router.get(`/`, async (req, res) => {
 	const product = await Product.find().limit(8);
@@ -251,6 +252,7 @@ router.get("/checkout", async (req, res) => {
 		sessionId: req.session._id,
 		anAdmin: req.session.anAdmin,
 		category: category,
+		apiKey: apiKey
 	});
 	// }
 });
