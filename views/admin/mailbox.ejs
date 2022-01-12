@@ -539,7 +539,7 @@
 
 			function getData() {
 			axios
-			 .get(`${document.URL}/searchmail?term=${mailSearch.value}`)
+			 .get(`${document.location.origin}/searchmail?term=${mailSearch.value}`)
 			 .then(results => autoCompleteData(results))
 			}
 
