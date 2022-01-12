@@ -250,40 +250,40 @@
 		getLocation();
 	})
 
-		let point = []
-		try {
-		if (navigator.geolocation) {
-			navigator.geolocation.getCurrentPosition(showPosition);
-		}
+	// 	let point = []
+	// 	try {
+	// 	if (navigator.geolocation) {
+	// 		navigator.geolocation.getCurrentPosition(showPosition);
+	// 	}
 
-		function showPosition(position) {
-		x.value = `${position.coords.latitude}, ${position.coords.longitude}`;
-		var lat = position.coords.latitude;
-		var lng = position.coords.longitude;
-		point.push(lat, lng)
-		setTimeout(myMap, 500);
-		}
+	// 	function showPosition(position) {
+	// 	x.value = `${position.coords.latitude}, ${position.coords.longitude}`;
+	// 	var lat = position.coords.latitude;
+	// 	var lng = position.coords.longitude;
+	// 	point.push(lat, lng)
+	// 	setTimeout(myMap, 500);
+	// 	}
 		
 
-		function myMap(){
-			var mapProp= {
-				center:new google.maps.LatLng(point[0], point[1]),
-				zoom:15		
-			};
-			var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-		}
-		setTimeout(myMap, 5000);
+	// 	function myMap(){
+	// 		var mapProp= {
+	// 			center:new google.maps.LatLng(point[0], point[1]),
+	// 			zoom:15		
+	// 		};
+	// 		var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+	// 	}
+	// 	setTimeout(myMap, 5000);
 		
 		
-	} catch (e) {
-		if (e) {
-			var y = document.querySelector(".errmsg").innerHTML = "Geolocation not working... Fill in the address form..."
-		}
-	}
+	// } catch (e) {
+	// 	if (e) {
+	// 		var y = document.querySelector(".errmsg").innerHTML = "Geolocation not working... Fill in the address form..."
+	// 	}
+	// }
 	
 	</script>
 	
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMBJk6_EouOWjT0UdVUQNqbg8aSFqEkaM&callback=myMap"></script>
+	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMBJk6_EouOWjT0UdVUQNqbg8aSFqEkaM&callback=myMap"></script> -->
 	<!-- <script src="vendor/jquery/jquery-3.2.1.min.js"></script> -->
 <%- include ('component/script.ejs') %> 
 
