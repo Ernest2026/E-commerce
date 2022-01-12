@@ -73,7 +73,7 @@ router.get("/searchmail", async (req, res) => {
 
 router.get("/searchstore", async (req, res) => {
 	try {
-		const arr = req.query.latlng.split(",");
+		const arr = req.query.loc.split(",");
 		const arrofno = arr.map(a => Number(a));
 
 		let result = await Store.aggregate([

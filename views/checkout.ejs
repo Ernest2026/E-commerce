@@ -237,7 +237,7 @@
 	async function getLocation() {
 		$('#storeoption').empty();
 		$('#storeoption').append("<option>Pickup station</option>");
-		let data = await fetch(`http://localhost:3000/searchstore?latlng=${x.value}`)
+		let data = await fetch(`http://localhost:3000/searchstore?loc=${x.value}`)
 		.then(data => data.json())
 		.then(result => {
 			result.forEach(value => {
